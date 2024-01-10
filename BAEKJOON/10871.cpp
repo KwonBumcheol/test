@@ -8,7 +8,7 @@ int main(){
     for(int i = 0; i < N; i++){
         cin >> seq_A[i]; // 수열A > 정수N개 입력
     }
-
+    
     for(int i = 0; i < N; i++){
             if(seq_A[i] < X){
                 cout << seq_A[i] << ' ';
