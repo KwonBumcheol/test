@@ -28,19 +28,19 @@ int main(){
     // }
     // return 0;
 
-    int T;
-	int H, W, N;
-	int result;
+    int T; // T=반복수 
+	int H, W, N; // H=층, W=방, N=손님(번째)
+	int result; // 방번호
 	cin >> T;
 
 	for (int i = 0; i < T; i++) {
-		cin >> H >> W >> N;
+		cin >> H >> W >> N; 
 
-		if (N%H == 0) {
-			result = H * 100 + (N / H);
+		if (N%H == 0) { // 나머지
+			result = H * 100 + (N / H); // 나누어떨어지는 경우
 		}
 		else {
-			result = (N%H) * 100 + (N / H) + 1;
+			result = (N%H) * 100 + (N / H) + 1; // 그 외
 		}
 		cout << result << endl;
 	}
