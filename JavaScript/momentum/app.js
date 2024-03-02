@@ -28,3 +28,31 @@ daysOfWeek.push("sun");
 
 console.log(daysOfWeek); */
 
+/* // Object
+ const player = {
+    name: "Kwon",
+    points: 10,
+    fat: true,
+};
+// console.log(player["name"]); // console.log(player.name);
+console.log(player);
+// player.fat = false; // player = false; 오류 -> const는 변경 불가
+player.lastName = "potato";
+player.points = player.points + 15; // 10+15
+console.log(player); */
+
+/* // function 1
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
+
+sayHello("Kwon", 10);
+sayHello("Moon", 23);
+sayHello("Dahye", 21); */
+
+// function 2
+function plus(a, b){
+    console.log(a + b);
+}
+
+plus(8, 60);

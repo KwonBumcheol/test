@@ -67,3 +67,45 @@ console.log(daysOfWeek);
 </code>
 </pre>
 
+## 4. Object
+
+- 중괄호({}) 내부에 property(특성)을 작성
+- : 사용
+### console = object
+
+<pre>
+<code>
+const player = {
+    name: "Kwon",
+    points: 10,
+    fat: true,
+};
+// console.log(player["name"]); // console.log(player.name);
+console.log(player);
+// player.fat = false; // player = false; 오류 -> const는 변경 불가
+player.lastName = "potato";
+player.points = player.points + 15; // 10+15
+console.log(player);
+</code>
+</pre>
+
+## 5. Functions
+
+### 캡슐화
+
+- argument  
+  ex) sayHello(<U>**"Kwon"**</U>);
+
+<pre>
+<code>
+function sayHello(nameOfPerson, age){
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
+
+sayHello("Kwon", 10);
+sayHello("Moon", 23);
+sayHello("Dahye", 21);
+</code>
+</pre>
+
+-
