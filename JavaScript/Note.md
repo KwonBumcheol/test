@@ -108,4 +108,76 @@ sayHello("Dahye", 21);
 </code>
 </pre>
 
--
+- function 안에 데이터를 가질 경우
+
+<pre>
+<code>
+const player = {
+    name: "kwon",
+    sayHello: function(otherPersonName){
+        console.log("hello " + otherPersonName + " nice to meet you");
+    },
+};
+
+console.log(player.name);
+player.sayHello("dahye"); // console.log(); 와 동일한 형식
+</code>
+</pre>
+
+## Recap 1 : 계산기
+
+<pre>
+<code>
+const calculator = {
+    add: function(a, b){
+        console.log(a + b);
+    },
+    minus: function(a, b){
+        console.log(a - b);
+    },
+    mult: function(a, b){
+        console.log(a * b);
+    },
+    divide: function(a, b){
+        console.log(a / b);
+    },
+    square: function(a, b){
+        console.log(a ** b);
+    }
+};
+
+calculator.add(2, 2);
+calculator.minus(2, 2);
+calculator.mult(2, 2);
+calculator.divide(2, 2);
+calculator.square(2, 2);
+</code>
+</pre>
+
+### function에 console.log 사용X
+
+<pre><code>
+const calculator = {
+    add: function(a, b){
+        return a + b;
+    },
+    minus: function(a, b){
+        return a - b;
+    },
+    mult: function(a, b){
+        return a * b;
+    },
+    divide: function(a, b){
+        return a / b;
+    },
+    square: function(a, b){
+        return a ** b;
+    }
+};
+
+const plusResult = calculator.add(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const multResult = calculator.mult(10, minusResult);
+const divideResult = calculator.divide(multResult, plusResult);
+const squareResult = calculator.square(divideResult, minusResult);
+</code></pre>
