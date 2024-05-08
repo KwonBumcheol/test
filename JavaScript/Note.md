@@ -210,3 +210,5 @@ if(isNaN(age) || age < 0){ // condition
     console.log("You can do whatever you want.");
 }
 </code></pre>
+
+## Recap 2 : 
