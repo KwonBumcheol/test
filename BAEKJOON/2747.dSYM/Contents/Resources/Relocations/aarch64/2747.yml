@@ -1,8 +1,0 @@
----
-triple:          'arm64-apple-darwin'
-binary-path:     '/Users/bumcheol/1/test/BAEKJOON/2747'
-relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z9fibonaccii, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0x70 }
-  - { offsetInCU: 0x2DDE, offset: 0x2DDE, size: 0x8, addend: 0x0, symName: __Z9fibonaccii, symObjAddr: 0x0, symBinAddr: 0x100003ED0, symSize: 0x70 }
-  - { offsetInCU: 0x2E0A, offset: 0x2E0A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x70, symBinAddr: 0x100003F40, symSize: 0x50 }
-...
