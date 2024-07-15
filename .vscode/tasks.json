@@ -11,8 +11,8 @@
                 "${fileDirname}/*.cpp",
                 // "${file}",
                 "-o",
-                // "${fileDirname}/${fileBasenameNoExtension}"
-                "${workspaceFolderBasename}.exe"
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                // "${workspaceFolderBasename}.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
