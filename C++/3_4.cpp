@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 class Circle{
@@ -28,4 +28,4 @@ int main(){
     Circle pizza(30); // 매개 변수있는 생성자 호출
     area = pizza.getArea();
     cout << "pizza 면적은 " << area << endl; 
-}
+}*/
