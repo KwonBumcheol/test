@@ -8,8 +8,8 @@
                 "-fcolor-diagnostics",
                 "-fansi-escape-codes",
                 "-g0",
-                "${fileDirname}/*.cpp",
-                // "${file}",
+                // "${fileDirname}/*.cpp", // 2
+                "${file}", // 1
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
                 // "${workspaceFolderBasename}.exe"

@@ -4,8 +4,8 @@
             "name": "C/C++: clang++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-            // "program": "${fileDirname}/${workspaceFolderBasename}.exe",
+            // "program": "${fileDirname}/${fileBasenameNoExtension}.exe", // 2 = 헤더파일 분리 O
+            "program": "${fileDirname}/${workspaceFolderBasename}.exe", // 1 = 헤더파일 분리 X
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
