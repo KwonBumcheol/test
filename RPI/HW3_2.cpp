@@ -69,7 +69,7 @@ LED::~LED(){  // The destructor unexports the sysfs GPIO entries
 int main(int argc, char* argv[]){  // the main function start point
    cout << "Starting the makeLEDs program" << endl;
    LED led1(516), led2(529), led3(539);         
-   vector<LED> leds = { led1, led2, led3 };
+   vector<LED*> leds = { &led1, &led2, &led3 };
 
     while(1){        // LEDs will alternate
         for(int i = 0; i < leds.size(); i++){
